@@ -1,0 +1,1104 @@
+/* JAK EDYTOWAĆ ID, PRZYKŁAD: 
+
+		#procesor {
+		width: 198px; -> szerokość prostokąta
+		height: 220px; -> wysokość prostokąta
+		top: 420px; -> położenie prostokąta w px od górnej krawędzi
+		left: 335px; -> położenie prostokąta w px od lewej krawędzi
+	}			
+	
+	Często położenie się buguje i trzeba testować ręcznie gdzie wywiało naszego diva :)
+		*/
+		
+		
+		
+		body {
+			background-color: white; /* kolor tła */
+			background-image:url(bg.jpg); /* obrazek tła */
+			background-size: cover; /* rozciągnięcie tła */
+			backgrounn-repeat: no-repeat; /* wymuszenie braku powtarzania tła jeżeli tło jest za małe */
+		}
+		
+		div {
+		margin: auto; /* wyrównanie marginesu */
+		position: relative; /* pozycjonowanie relatywne (top, bottom, left, right) */
+		overflow: hidden; //*pasek scrollowania ukryty */ 
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.3); /* cień divów */
+		}
+		
+		.gniazda h1 {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		margin: auto;
+		padding-top: 25%;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 10px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	.gniazda h1:hover {
+		padding-top: 25%;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 10px;
+	}
+		
+		.plyta {
+		width:1306px; 
+		height:959px;
+		background-image:url(plyta.png);
+		overflow: auto;
+		overflow: hidden;
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.0);
+		}
+		
+		.gniazda {
+		width:1251px;
+		height:205px; 
+		background-image:url(gniazda.png);
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.0);
+		}
+		
+		.gniazda2 {
+		width:600px;
+		height:222px; 
+		background-image:url(gniazda2.png);
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.0);
+		}
+		
+		.czesci {
+		transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.0);
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        transition-duration: 0.5s;
+        transition-property: all;
+		background-color: rgba(0, 0, 0, 0.0);
+		overflow-x: hidden;
+		}
+
+    .czesci:hover,
+    .czesci:focus,
+    .czesci:active {
+        transform: scale(1.1);
+		background-color: rgba(0, 0, 0, 0.4);
+		border-color: white;
+		border-size: 1px;
+		border-style: dashed;
+		overflow-x: hidden;
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    }
+	
+		#procesor {
+		width: 198px;
+		height: 220px;
+		top: 420px;
+		left: 335px;
+	}	
+	
+	#procesor h1 {
+		width: 198px;
+		height: 130px;
+		opacity: 0;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 17px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}
+	
+	#procesor h1:hover {
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 17px;
+	}
+	
+	#bios {
+		width: 60px;
+		height: 65px;
+		top: 535px;
+		left: -530px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	
+	#bios h1 {
+		width: 60px;
+		height: 65px;
+		opacity: 0;
+		margin: auto;
+		padding-top: 40%;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 10px;
+	}	
+	#bios h1:hover {
+		margin-top: 30px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 14px;
+	}
+	
+	#h1 {
+		padding-top: 45%;
+	}
+	
+	#mostek {
+		width: 180px;
+		height: 260px;
+		top: 140px;
+		left: -10px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	
+	#mostek h1 {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		margin: auto;
+		padding-top: 55%;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 15px;
+				transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	#mostek h1:hover {
+		margin-top: 30px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 18px;
+	}
+	
+	
+	
+	#ram {
+		width: 600px;
+		height: 150px;
+		top: 180px;
+		left: 300px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	
+	#ram h1 {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		margin: auto;
+		padding-top: 40%;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 10px;
+				transition-duration: 0.3s;
+        transition-property: all;
+		padding-top: 50px;
+	}	
+	#ram h1:hover {
+		padding-top: 50px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 20px;
+	}
+	
+	#pci1 {
+		width: 60px;
+		height: 370px;
+		top: -490px;
+		left: -490px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	
+	#pci2 {
+		width: 60px;
+		height: 370px;
+		top: -860px;
+		left: -570px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}
+	
+	#pci1 h1, #pci2 h1 {
+		padding-top: 180px;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 10px;
+				transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	#pci1 h1:hover, #pci2 h1:hover {
+		padding-top: 180px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 20px;
+	}
+	
+	#pcie1 {
+		width: 75px;
+		height: 150px;
+		top: -1230px;
+		left: -53px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}
+	
+	#pcie2 {
+		width: 75px;
+		height: 150px;
+		top: -1385px;
+		left: -225px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}
+	
+	#pcie3 {
+		width: 75px;
+		height: 150px;
+		top: -1525px;
+		left: -315px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}
+	
+	#pcie4 {
+		width: 75px;
+		height: 150px;
+		top: -1685px;
+		left: -400px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}
+	
+	#pcie1 h1, #pcie2 h1, #pcie3 h1, #pcie4 h1 {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 10px;
+		transition-duration: 0.3s;
+        transition-property: all;
+		padding-top: 65px;
+	}	
+	#pcie1 h1:hover, #pcie2 h1:hover, #pcie3 h1:hover, #pcie4 h1:hover {
+		padding-top: 65px;
+		padding-left: 0px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 15px;
+	}
+	
+		#mostekpd {
+		width: 180px;
+		height: 160px;
+		top: -1355px;
+		left: -240px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	
+	#mostekpd h1 {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		margin: auto;
+		padding-top: 30%;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 15px;
+				transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	#mostekpd h1:hover {
+		padding-top: 30%;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 18px;
+	}
+	
+	#ide {
+		width: 280px;
+		height: 60px;
+		top: -1310px;
+		left: -280px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	
+	#ide h1 {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		margin: auto;
+		padding-top: 7%;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 15px;
+				transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	#ide h1:hover {
+		padding-top: 7%;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 20px;
+	}
+	
+	#sata {
+		width: 90px;
+		height: 160px;
+		top: -1520px;
+		left: -450px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	
+	#sata h1 {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		margin: auto;
+		padding-top: 60px;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 15px;
+				transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	#sata h1:hover {
+		padding-top: 60px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 20px;
+	}
+	
+	#usb {
+		width: 155px;
+		height: 110px;
+		top: -2390px;
+		left: 270px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	
+	#usb h1 {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		margin: auto;
+		padding-top: 40px;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 15px;
+				transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	#usb h1:hover {
+		padding-top: 40px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 30px;
+	}
+	
+	#bat {
+		width: 100px;
+		height: 100px;
+		top: -2180px;
+		left: -380px;
+		transition-duration: 0.3s;
+        transition-property: all;
+		border-radius: 50%;
+	}	
+	
+	#bat h1 {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		margin: auto;
+		padding-top: 40px;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 15px;
+				transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	#bat h1:hover {
+		padding-top: 40px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 15px;
+	}
+	
+	#atx {
+		width: 230px;
+		height: 55px;
+		top: -1730px;
+		left: 355px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	
+	#atx h1 {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		margin: auto;
+		padding-top: 20px;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 15px;
+				transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	#atx h1:hover {
+		padding-top: 20px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 15px;
+	}
+	
+	#usb_lan {
+		width: 100px;
+		height: 120px;
+		top: -2650px;
+		left: 135px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	
+	#usb_lan h1 {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		margin: auto;
+		padding-top: 40px;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 15px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	#usb_lan h1:hover {
+		padding-top: 40px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 17px;
+	}
+	
+	#audio {
+		width: 110px;
+		height: 110px;
+		top: -2790px;
+		left: 30px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	
+	#audio h1 {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		margin: auto;
+		padding-top: 40px;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 15px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	#audio h1:hover {
+		padding-top: 40px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 17px;
+	}
+	
+	#fdd {
+		width: 40px;
+		height: 230px;
+		top: -2565px;
+		left: -625px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}
+	
+	#fdd h1 {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		margin: auto;
+		padding-top: 100px;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 13px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	#fdd h1:hover {
+		padding-top: 100px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 15px;
+	}
+	
+	#pcie16 {
+		width: 40px;
+		height: 375px;
+		top: -2900px;
+		left: -140px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}
+	
+	#pcie16 h1 {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		margin: auto;
+		padding-top: 150px;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 13px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	#pcie16 h1:hover {
+		padding-top: 150px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 13px;
+	}
+	
+	
+	#atx2 {
+		width: 50px;
+		height: 50px;
+		top: -3305px;
+		left: 15px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}
+	
+	#atx2 h1 {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		margin: auto;
+		padding-top: 20px;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 13px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	#atx2 h1:hover {
+		padding-top: 20px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 13px;
+	}
+	
+	/* -------------------- GNIAZDA  ---------------------- */
+	
+	
+	.gniazdo {
+		/*border-color: yellow;
+		border-size: 1px;
+		border-style: dashed;*/
+		transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.0);
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        transition-duration: 0.5s;
+        transition-property: all;
+		background-color: rgba(0, 0, 0, 0.0);
+		overflow-x: hidden;
+		}
+		
+		.gniazdo:hover,
+    .gniazdo:focus,
+    .gniazdo:active {
+        transform: scale(1.05);
+		background-color: rgba(0, 0, 0, 0.4);
+		border-color: white;
+		border-size: 1px;
+		border-style: solid;
+		overflow-x: hidden;
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    }
+	
+	
+	#ps2 {
+		width: 60px;
+		height: 60px;
+		top: 45px;
+		left: -538px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	
+	#ps2 h1 {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		margin: auto;
+		padding-top: 20px;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 15px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	#ps2 h1:hover {
+		padding-top: 20px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 17px;
+	}
+	
+	#usb20 {
+		width: 130px;
+		height: 65px;
+		top: 35px;
+		left: -500px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	
+	#usb20 h1 {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		margin: auto;
+		padding-top: 20px;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 15px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	#usb20 h1:hover {
+		padding-top: 20px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 17px;
+	}
+	
+	#bluetooth {
+		width: 70px;
+		height: 30px;
+		top: -60px;
+		left: -467px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	
+	#bluetooth h1 {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		margin: auto;
+		padding-top: 10px;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 10px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+	
+		#bluetooth h1:hover {
+		padding-top: 10px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 10px;
+	}
+	
+	#optic {
+		width: 60px;
+		height: 50px;
+		top: -140px;
+		left: -380px;
+		transition-duration: 0.3s;
+        transition-property: all;		
+	}
+	
+	#hdmi {
+		width: 70px;
+		height: 30px;
+		top: -130px;
+		left: -380px;
+		transition-duration: 0.3s;
+        transition-property: all;		
+	}
+	
+	#hdmi h1:hover {
+		padding-top: 10px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 10px;
+	}
+	
+	#display {
+		width: 70px;
+		height: 40px;
+		top: -110px;
+		left: -380px;
+		transition-duration: 0.3s;
+        transition-property: all;		
+	}
+	
+	#display h1:hover {
+		padding-top: 10px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 10px;
+	}
+	
+	#vga {
+		width: 150px;
+		height: 50px;
+		top: -217px;
+		left: -250px;
+		transition-duration: 0.3s;
+        transition-property: all;		
+	}
+	
+	#vga h1:hover {
+		padding-top: 15px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 20px;
+	}
+	
+		#dvi {
+		width: 150px;
+		height: 50px;
+		top: -210px;
+		left: -250px;
+		transition-duration: 0.3s;
+        transition-property: all;		
+	}
+	
+	#dvi h1:hover {
+		padding-top: 15px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 20px;
+	}
+	
+	#lan {
+		width: 55px;
+		height: 50px;
+		top: -330px;
+		left: -130px;
+		transition-duration: 0.3s;
+        transition-property: all;		
+	}
+
+		#lan h1:hover {
+		padding-top: 15px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 10px;
+	}
+	
+	#usb30 {
+		width: 55px;
+		height: 65px;
+		top: -330px;
+		left: -130px;
+		transition-duration: 0.3s;
+        transition-property: all;		
+	}
+
+		#usb30 h1:hover {
+		padding-top: 15px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 15px;
+	}
+	
+		#p-audio {
+		width: 100px;
+		height: 140px;
+		top: -466px;
+		left: -30px;
+		transition-duration: 0.3s;
+        transition-property: all;		
+	}
+
+		#p-audio h1:hover {
+		padding-top: 25px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 15px;
+	}
+	
+	#lpt {
+		width: 180px;
+		height: 50px;
+		top: 65px;
+		left: -90px;
+		transition-duration: 0.3s;
+        transition-property: all;		
+	}
+	
+	#lpt h1 {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		margin: auto;
+		padding-top: 10px;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 15px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+
+		#lpt h1:hover {
+		padding-top: 20px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 15px;
+	}
+	
+		#com {
+		width: 100px;
+		height: 50px;
+		top: 75px;
+		left: -142px;
+		transition-duration: 0.3s;
+        transition-property: all;		
+	}
+	
+	#com h1 {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		margin: auto;
+		padding-top: 10px;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 15px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+
+		#com h1:hover {
+		padding-top: 20px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 15px;
+	}
+	
+	#vga-male {
+		width: 100px;
+		height: 40px;
+		top: 30px;
+		left: -35px;
+		transition-duration: 0.3s;
+        transition-property: all;		
+	}
+	
+	#vga-male h1 {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		margin: auto;
+		padding-top: 15px;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 12px;
+		transition-duration: 0.3s;
+        transition-property: all;
+	}	
+
+		#vga-male h1:hover {
+		padding-top: 15px;
+		opacity: 1;
+		margin: auto;
+		color: white;
+		text-align: center;
+		font-family: Arial;
+		text-shadow: 1px 1px 5px black;
+		font-size: 12px;
+	}
