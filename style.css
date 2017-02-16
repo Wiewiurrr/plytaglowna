@@ -16,7 +16,7 @@
 			background-color: white; /* kolor tła */
 			background-image:url(bg.jpg); /* obrazek tła */
 			background-size: cover; /* rozciągnięcie tła */
-			backgrounn-repeat: no-repeat; /* wymuszenie braku powtarzania tła jeżeli tło jest za małe */
+			background-repeat: no-repeat; /* wymuszenie braku powtarzania tła jeżeli tło jest za małe */
 		}
 		
 		div {
